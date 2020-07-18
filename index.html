@@ -12,6 +12,7 @@
     <meta property="og:image" content="img/preview.jpg" />
 
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/rellax.min.js"></script>
 
     <link rel="preload" href="./fonts/montserrat-v14-latin-ext-200.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="./fonts/montserrat-v14-latin-ext-200i.woff2" as="font" type="font/woff2" crossorigin />
@@ -121,6 +122,7 @@
 
     <script>
       const arrow = document.getElementById("arrow");
+      const rellax = new Rellax(".rellax")
 
       window.onscroll = function () {
           arrow.classList.add("hidden");
