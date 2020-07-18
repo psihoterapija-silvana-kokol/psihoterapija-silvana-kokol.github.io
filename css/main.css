@@ -109,11 +109,11 @@ header .quote h2 {
 
 header .quote img {
   position: absolute;
-  opacity: .6;
-  bottom: 10%;
+  bottom: 12%;
   width: 30px;
-  -webkit-animation: move .6s infinite alternate;
-          animation: move .6s infinite alternate;
+  opacity: 0.6;
+  -webkit-animation: move 0.6s infinite alternate;
+          animation: move 0.6s infinite alternate;
 }
 
 header .quote img.hidden {
@@ -150,9 +150,11 @@ section h1 {
   font-weight: 300;
 }
 
-section p {
+section p,
+section li {
   text-align: justify;
-  line-height: 1.8em;
+  font-size: 0.9em;
+  line-height: 2em;
 }
 
 .o-meni .content {
@@ -165,15 +167,19 @@ section p {
 
 .o-meni .tekst ul {
   list-style-type: none;
-  line-height: 1.8em;
   padding: 0;
 }
 
 .o-meni .tekst ul li:before {
-  content: "- ";
+  content: "-";
   position: absolute;
   -webkit-transform: translateX(-15px);
           transform: translateX(-15px);
+}
+
+.o-meni .tekst ul li {
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
 }
 
 .o-meni .portret {
@@ -239,7 +245,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-size: .9em;
+  font-size: 0.8em;
 }
 
 /* -------- media queries -------- */
