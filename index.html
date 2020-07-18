@@ -37,6 +37,7 @@
       <div class="quote">
         <h1>&quot;Tema je tvoja svetloba. Tvoje omejitve so tvoje iskanje.&quot;</h1>
         <h2>- Rumi</h2>
+        <img src="img/icons/arrow.svg" alt="scroll-down" id="arrow" />
       </div>
     </header>
     <section class="o-meni">
@@ -53,13 +54,6 @@
             <li>Univerza v Mariboru, Pedagoška fakulteta</li>
             <li>članica Evropske zveze psihoanalitičnih pristopov - Slovenija (EZPPS)</li>
           </ul>
-          <p hidden>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
-            vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.
-          </p>
         </div>
         <div class="portret"></div>
       </div>
@@ -124,5 +118,13 @@
     <footer>
       <span>&copy;&nbsp;2020&emsp;|&emsp;Silvana Kokol</span>
     </footer>
+
+    <script>
+      const arrow = document.getElementById("arrow");
+
+      window.onscroll = function () {
+          arrow.classList.add("hidden");
+        };
+    </script>
   </body>
 </html>
