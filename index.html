@@ -36,14 +36,28 @@
   </head>
   <body>
     <header>
-      <div class="quote">
+      <div class="background-img rellax" data-rellax-speed="-3" style="background-image: url('img/clouds.jpg');"></div>
+      <div class="quote rellax" data-rellax-speed="-1">
         <h1>&quot;Tema je tvoja svetloba. Tvoje omejitve so tvoje iskanje.&quot;</h1>
         <h2>- Rumi</h2>
-        <a href="#"><img src="img/icons/arrow.svg" alt="scroll-down" id="arrow" /></a>
+        <a href="#"><img class="arrow" src="img/icons/arrow.svg" /></a>
+
         <script>
-          $("#arrow").click(function (e) {
+          $(".arrow").click(function (e) {
             e.preventDefault();
             $("html, body").animate({ scrollTop: $(window).height() }, 1500);
+
+            setTimeout(function () {
+              $(".arrow").css("display", "none");
+            }, 1000);
+          });
+
+          $(window).scroll(function () {
+            $(".arrow").css("opacity", "0");
+
+            setTimeout(function () {
+              $(".arrow").css("display", "none");
+            }, 1000);
           });
         </script>
       </div>
@@ -67,6 +81,8 @@
       </div>
     </section>
     <section class="o-psihoterapiji">
+      <!-- prettier-ignore -->
+      <div class="background-img rellax" data-rellax-percentage="0.5" style="background-image: url('img/sea.jpg');"></div>
       <div class="tekst">
         <h1>O Psihoterapiji</h1>
         <p>
@@ -126,14 +142,8 @@
     <footer>
       <span>&copy;&nbsp;2020&emsp;|&emsp;Silvana Kokol</span>
     </footer>
-
     <script>
-      const arrow = document.getElementById("arrow");
       const rellax = new Rellax(".rellax");
-
-      window.onscroll = function () {
-        arrow.classList.add("hidden");
-      };
     </script>
   </body>
 </html>

@@ -34,6 +34,32 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* ------ parallax effect ------ */
+header,
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+header .background-img,
+section .background-img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* -------- add shadow -------- */
+.o-meni,
+.kontakt {
+  -webkit-box-shadow: 0px 0px 35px #00000033;
+          box-shadow: 0px 0px 35px #00000033;
+}
+
+/* -------- all styles -------- */
 body {
   margin: 0;
   padding: 0;
@@ -43,12 +69,12 @@ body {
 a {
   text-decoration: none;
   color: #738695;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 a:hover {
-  color: #285981;
+  color: #184f7b;
 }
 
 ::-moz-selection {
@@ -59,20 +85,16 @@ a:hover {
   background: #6fb6e026;
 }
 
+/* -------- sections -------- */
 header {
   height: 100vh;
-  background-image: url("../img/clouds.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #00000010;
 }
 
 header .quote {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   height: 100%;
-  padding: 30px;
   max-width: 500px;
+  padding: 30px;
   margin: auto;
   -webkit-transform: translateY(4%);
           transform: translateY(4%);
@@ -94,30 +116,27 @@ header .quote {
 
 header .quote h1 {
   font-size: 2.2em;
-  color: #ffffff;
   font-weight: inherit;
   font-style: italic;
+  color: #ffffff;
 }
 
 header .quote h2 {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: 20px;
-  color: #ffffffcc;
+  font-size: 1.6em;
   font-weight: inherit;
+  color: #ffffffcc;
 }
 
-header .quote img {
+header .quote .arrow {
   position: absolute;
-  bottom: 12%;
+  bottom: 13%;
   width: 30px;
   opacity: 0.6;
   -webkit-animation: move 0.6s infinite alternate;
           animation: move 0.6s infinite alternate;
-}
-
-header .quote img.hidden {
-  opacity: 0;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
@@ -184,18 +203,15 @@ section li {
 .o-meni .portret {
   width: 100%;
   min-height: 200px;
+  margin-bottom: 50px;
   background-image: url("../img/portret.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 50px;
 }
 
-.o-psihoterapiji {
-  background-image: url("../img/sea.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.o-psihoterapiji .content {
+  margin: 5% auto;
 }
 
 .o-psihoterapiji .tekst {
@@ -218,11 +234,6 @@ section li {
 
 .kontakt .tekst ul .nowrap {
   white-space: nowrap;
-}
-
-.kontakt .google-maps {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .kontakt .google-maps iframe {
@@ -274,7 +285,6 @@ footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin: 5% auto;
   }
   .tekst {
     max-width: 500px;
@@ -285,9 +295,9 @@ footer {
     max-width: 500px;
   }
   .google-maps {
+    min-width: 500px;
     margin: 30px;
     padding: 30px 0;
-    min-width: 500px;
   }
   .google-maps iframe {
     height: 100%;
