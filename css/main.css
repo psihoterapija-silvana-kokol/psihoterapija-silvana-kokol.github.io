@@ -221,10 +221,12 @@ section li {
 }
 
 .kontakt .google-maps {
-  margin-bottom: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .kontakt .google-maps iframe {
+  display: block;
   width: 100%;
 }
 
@@ -284,8 +286,8 @@ footer {
   }
   .google-maps {
     margin: 30px;
-    padding-top: 30px;
-    min-width: 400px;
+    padding: 30px 0;
+    min-width: 500px;
   }
   .google-maps iframe {
     height: 100%;
