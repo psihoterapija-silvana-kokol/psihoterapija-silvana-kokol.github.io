@@ -111,11 +111,12 @@ header .quote {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 2.2em;
   font-weight: 200;
 }
 
 header .quote h1 {
-  font-size: 2.2em;
+  font-size: 100%;
   font-weight: inherit;
   font-style: italic;
   color: #ffffff;
@@ -125,7 +126,7 @@ header .quote h2 {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: 20px;
-  font-size: 1.6em;
+  font-size: 80%;
   font-weight: inherit;
   color: #ffffffcc;
 }
@@ -160,6 +161,19 @@ header .quote .arrow {
   to {
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
+  }
+}
+
+@media screen and (min-width: 350px) {
+  header .quote {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header .quote {
+    font-size: 3em;
+    max-width: 600px;
   }
 }
 
@@ -291,7 +305,7 @@ footer {
   }
   .portret {
     margin: 30px;
-    padding-top: 30px;
+    margin-top: 60px;
     max-width: 500px;
   }
   .google-maps {
