@@ -6,21 +6,14 @@
 
     <meta property="og:title" content="Psihoterapija Silvana Kokol" />
     <meta property="og:site_name" content="Psihoterapija Silvana Kokol" />
-    <meta property="og:url" content="https://vodnibivol.github.io/test/" />
-    <meta property="og:description" content="Ljubljanska cesta 1, 2310 Slovenska Bistrica" />
+    <meta property="og:url" content="https://psihoterapija-silvana-kokol.si/" />
+    <meta property="og:description" content="Cesta k Tamu 9, 2000 Maribor" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="img/preview.jpg" />
 
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/rellax.min.js"></script>
-    <script src="js/site.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 
-    <link rel="preload" href="./fonts/montserrat-v14-latin-ext-200.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="./fonts/montserrat-v14-latin-ext-200i.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="./fonts/montserrat-v14-latin-ext-300.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="./fonts/montserrat-v14-latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="./img/clouds.jpg" as="image" />
+    <!-- <link rel="preload" href="./img/clouds.jpg" as="image" /> -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png" />
@@ -33,96 +26,144 @@
     <meta name="msapplication-config" content="img/icons/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
 
+    <!-- prettier-ignore -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>Psihoterapija Silvana Kokol</title>
   </head>
   <body>
     <header>
-      <div class="background-img rellax" data-rellax-speed="-3" style="background-image: url('img/clouds.jpg');"></div>
-      <div class="quote rellax" data-rellax-speed="-1">
-        <h1>&quot;Tema je tvoja svetloba. Tvoje omejitve so tvoje iskanje.&quot;</h1>
-        <h2>- Rumi</h2>
-        <a href="#"><img class="arrow" src="img/icons/arrow.svg" /></a>
+      <img src="./img/clouds.jpg" alt="clouds" class="background rellax" data-rellax-speed="-4" />
+      <div class="container-fluid">
+        <div class="row min-vh-100 justify-content-center align-items-center">
+          <div class="col-11 col-sm-6 rellax">
+            <h1 class="text-white fw-lighter fst-italic mb-4">
+              Tema je tvoja svetloba. Tvoje omejitve so tvoje iskanje.
+            </h1>
+            <h2 class="text-white-50 fw-lighter text-muted text-end">Rumi</h2>
+          </div>
+        </div>
+        <!-- <div class="row"> -->
+        <!-- <div class="col"> -->
+        <div class="bottom-0 d-flex justify-content-center mb-4 mb-lg-5 position-absolute w-100">
+          <div class="arrow-down"></div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
     </header>
     <section class="o-meni">
-      <div class="content">
-        <div class="tekst">
-          <h1>O Meni</h1>
-          <ul>
-            <li>Silvana Kokol, psihoanalitična psihoterapevtka</li>
-            <li>
-              končan petletni študij PA psihoterapije na Univerzi Sigmunda Freuda v Ljubljani (1 leto propedevtike, 4
-              leta specialističnega študija)
-            </li>
-            <li>univ. dipl. prof. RP</li>
-            <li>Univerza v Mariboru, Pedagoška fakulteta</li>
-            <li>članica Evropske zveze psihoanalitičnih pristopov - Slovenija (EZPPS)</li>
-          </ul>
+      <div class="container py-md-5">
+        <div class="row px-3 py-5 p-md-5">
+          <div class="col">
+            <h2>O meni</h2>
+            <ul>
+              <li>Silvana Kokol, psihoanalitična psihoterapevtka</li>
+              <li>
+                končan petletni študij PA psihoterapije na Univerzi Sigmunda Freuda v Ljubljani (1&nbsp;leto
+                propedevtike, 4 leta specialističnega študija)
+              </li>
+              <li>Univerza v Mariboru, Pedagoška fakulteta</li>
+              <li>univ. dipl. prof. RP</li>
+              <li>članica Evropske zveze psihoanalitičnih pristopov - Slovenija (EZPPS)</li>
+            </ul>
+          </div>
+
+          <div class="col col-5 ms-5 d-none d-md-block">
+            <div class="portrait">
+              <img src="./img/portret.jpg" alt="Silvana Kokol" />
+            </div>
+          </div>
         </div>
-        <div class="portret"></div>
+      </div>
+
+      <div class="container-fluid d-md-none px-0 mb-4">
+        <div class="portrait">
+          <img src="./img/portret.jpg" alt="Silvana Kokol" />
+        </div>
       </div>
     </section>
     <section class="o-psihoterapiji">
       <!-- prettier-ignore -->
-      <div class="background-img rellax" data-rellax-speed="-3" data-rellax-percentage="0.5" style="background-image: url('img/sea.jpg');"></div>
-      <div class="tekst">
-        <h1>O Psihoterapiji</h1>
-        <p>
-          Psihoterapija je zdravljenje s pogovorom. Je celjenje ran, ki so jih v dušo vtisnile zgodbe, velikokrat
-          pozabljene, potlačene, nepredelane in ki zdaj živijo svoje življenje v globinah, do katerih ne moremo priti
-          tako zlahka.
-        </p>
-        <p>
-          Nekje na poti se je zapletlo. Nekaj ni bilo sprejeto ali ni moglo zaživeti. Nek odnos ni bil varen ali vreden
-          zaupanja. Nekaj težkega se je vraslo v nas ...
-        </p>
-        <p>
-          Psihoterapija nudi možnost popravljanja tega, kar nas je skozi te zgodbe, skozi odnose v njih, ranilo. Temelji
-          na odnosu med terapevtom in pacientom, ki je varen, pomagajoč. Drugačen od tistih, v katerih smo se izgubili,
-          poškodovali ali zlomili. Skozi ta odnos lahko varno raziščemo, kaj se nam je v življenju v resnici zgodilo. S
-          sidrom v sedanjem trenutku si dovolimo začutiti svoje globine, jih s pomočjo terapevta podoživeti in
-          ubesediti.
-        </p>
-        <p>
-          Tako zgodbe, ki so stkale vzorce, v katere smo se do sedaj tolikokrat ujeli, počasi odložimo v preteklost in
-          se od njih osvobodimo.
-        </p>
+      <img src="./img/sea.jpg" loading="lazy" alt="sea" class="background rellax" data-rellax-speed="-3" />
+      <div class="container py-md-5">
+        <div class="row justify-content-center px-3 py-5 p-md-5">
+          <div class="col-sm-10 col-lg-12 text-white fw-light">
+            <h2>O psihoterapiji</h2>
+            <p>
+              Psihoterapija je zdravljenje s pogovorom. Je celjenje ran, ki so jih v dušo vtisnile zgodbe, velikokrat
+              pozabljene, potlačene, nepredelane in ki zdaj živijo svoje življenje v globinah, do katerih ne moremo
+              priti tako zlahka.
+            </p>
+            <p>
+              Nekje na poti se je zapletlo. Nekaj ni bilo sprejeto ali ni moglo zaživeti. Nek odnos ni bil varen ali
+              vreden zaupanja. Nekaj težkega se je vraslo v nas ...
+            </p>
+            <p>
+              Psihoterapija nudi možnost popravljanja tega, kar nas je skozi te zgodbe, skozi odnose v njih, ranilo.
+              Temelji na odnosu med terapevtom in pacientom, ki je varen, pomagajoč. Drugačen od tistih, v katerih smo
+              se izgubili, poškodovali ali zlomili. Skozi ta odnos lahko varno raziščemo, kaj se nam je v življenju v
+              resnici zgodilo. S sidrom v sedanjem trenutku si dovolimo začutiti svoje globine, jih s pomočjo terapevta
+              podoživeti in ubesediti.
+            </p>
+            <p>
+              Tako zgodbe, ki so stkale vzorce, v katere smo se do sedaj tolikokrat ujeli, počasi odložimo v preteklost
+              in se od njih osvobodimo.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="kontakt">
-      <div class="content">
-        <div class="tekst">
-          <h1>Kontakt</h1>
-          <ul>
-            <li>Psihoterapija Silvana Kokol s.p.</li>
-            <li>Ljubljanska cesta 1</li>
-            <li>2310 Slovenska Bistrica</li>
-            <br />
-            <li>telefon: <a href="tel:+38631783579">+386 31 783 579</a></li>
-            <li class="nowrap">e-mail: <a href="mailto:silvana.kokol@gmail.com">silvana.kokol@gmail.com</a></li>
-            <br />
-            <li>
-              Cena psihoterapevtske ure je 50&nbsp;€. Cena se lahko po dogovoru prilagodi osebam z nizkim oz. zelo
-              visokim osebnim dohodkom.
-            </li>
-          </ul>
+      <div class="container py-md-5">
+        <div class="row px-3 py-5 p-md-5">
+          <div class="col">
+            <h2>Kontakt</h2>
+            <ul class="list-unstyled">
+              <li>Psihoterapija Silvana Kokol s.p.</li>
+              <li>Cesta k Tamu 9</li>
+              <li>2000 Maribor</li>
+              <br />
+              <li>telefon: <a href="tel:+38631783579">+386 31 783 579</a></li>
+              <li class="text-nowrap">e-mail: <a href="mailto:silvana.kokol@gmail.com">silvana.kokol@gmail.com</a></li>
+              <br />
+              <li>Cena psihoterapevtske ure je 50&nbsp;€.</li>
+            </ul>
+          </div>
+
+          <div class="col d-block d-none d-md-block">
+            <div class="map">
+              <!-- prettier-ignore -->
+              <iframe loading="lazy" src="https://maps.google.com/maps?q=Psihoterapija%20Silvana%20Kokol&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
         </div>
-        <div class="google-maps">
-          <iframe
-            src="https://maps.google.com/maps?q=Psihoterapija%20Silvana%20Kokol&t=&z=16&ie=UTF8&iwloc=&output=embed"
-            width="450"
-            height="300"
-            frameborder="0"
-            style="border: 0;"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
+      </div>
+      <div class="container-fluid d-md-none px-0 mb-4">
+        <!-- <div class="row"> -->
+        <!-- <div class="col"> -->
+        <div class="map">
+          <!-- prettier-ignore -->
+          <iframe loading="lazy" src="https://maps.google.com/maps?q=Psihoterapija%20Silvana%20Kokol&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
     </section>
     <footer>
-      <span>&copy;&nbsp;2020&emsp;|&emsp;Silvana Kokol</span>
+      <div class="background"></div>
+      <div class="container-fluid">
+        <div class="row py-4 py-lg-5 justify-content-center">
+          <div class="col">
+            <p class="m-0 text-center text-white text-uppercase small"><span id="year"></span> | Silvana Kokol</p>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <script src="js/rellax.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/site.js"></script>
   </body>
 </html>

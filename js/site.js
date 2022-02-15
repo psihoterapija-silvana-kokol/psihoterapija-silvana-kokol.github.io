@@ -1,28 +1,35 @@
-/* ------------- rellax ------------ */
+const Main = (function () {
+  /* --- rellax --- */
 
-const rellax = new Rellax(".rellax");
+  new Rellax('.rellax', { center: true });
 
-/* -------- scrolling arrow -------- */
+  $('#year').text(new Date().getFullYear());
 
-if ($(".o-meni").height() > $(window).height()) {
-  var scrollOffset = $(window).height();
-} else {
-  var scrollOffset = $(".o-meni").offset().top + ($(".o-meni").height() - $(window).height()) / 2;
-}
+  /* --- scrolling arrow --- */
 
-$(".arrow").click(function (e) {
-  e.preventDefault();
-  $("html, body").animate({ scrollTop: scrollOffset }, 1500);
+  $('.arrow-down').click(function () {
+    let scrollOffset;
 
-  setTimeout(function () {
-    $(".arrow").css("display", "none");
-  }, 1000);
-});
+    if ($('.o-meni').height() < $(window).height()) {
+      // scroll to middle
+      scrollOffset = $('.o-meni').offset().top - ($(window).height() - $('.o-meni').height()) / 2;
+    } else {
+      scrollOffset = $('.o-meni').offset().top;
+    }
 
-$(window).scroll(function () {
-  $(".arrow").css("opacity", "0");
+    $('html, body').animate({ scrollTop: scrollOffset }, 1000);
 
-  setTimeout(function () {
-    $(".arrow").css("display", "none");
-  }, 1000);
-});
+    $('.arrow-down').fadeOut();
+  });
+
+  $(window).scroll(function () {
+    if (window.scrollY === 0) {
+      $('.arrow-down').fadeIn();
+    } else {
+      $('.arrow-down').fadeOut();
+    }
+  });
+})();
+
+// TODO: fonti so lahko skriti, ko se nalozijo, se pocasi pojavijo (animacija)
+// ali: preload fonts
