@@ -33,5 +33,3 @@ const Main = (function () {
 
 // TODO: fonti so lahko skriti, ko se nalozijo, se pocasi pojavijo (animacija)
 // ali: preload fonts
-
-console.log('this is a commit test'); // TODO: delete
