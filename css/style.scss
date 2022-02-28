@@ -55,6 +55,18 @@ header {
   h2 {
     font-size: 2rem;
   }
+
+  @media screen and (max-width: 375px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    // NOTE: lahko tudi h2 1.8rem
+  }
 }
 
 section {
@@ -108,10 +120,11 @@ section.o-psihoterapiji {
 }
 
 .arrow-down {
-  // position: absolute;
-  // bottom: 4rem;
   cursor: pointer;
-  // background-color: red;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
   padding: 2rem;
 
   animation: bounce 0.7s alternate infinite ease-in-out;
@@ -120,9 +133,9 @@ section.o-psihoterapiji {
     content: '';
     // position: absolute;
     border: solid #fff;
-    border-width: 0 1.8px 1.8px 0;
+    border-width: 0 1.4px 1.4px 0;
     display: inline-block;
-    padding: 6px;
+    padding: 5px;
 
     // down
     transform: rotate(45deg);
