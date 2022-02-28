@@ -142,6 +142,12 @@ section.o-psihoterapiji {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .arrow-down {
+    bottom: 50px;
+  }
+}
+
 @keyframes bounce {
   from {
     transform: translateY(0);
