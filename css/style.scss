@@ -64,8 +64,6 @@ header {
     h2 {
       font-size: 1.8rem;
     }
-
-    // NOTE: lahko tudi h2 1.8rem
   }
 }
 
@@ -119,6 +117,10 @@ section.o-psihoterapiji {
   }
 }
 
+.transparent {
+  opacity: 0;
+}
+
 .arrow-down {
   cursor: pointer;
   position: absolute;
@@ -127,11 +129,11 @@ section.o-psihoterapiji {
   text-align: center;
   padding: 2rem;
 
+  transition: opacity 0.5s;
   animation: bounce 0.7s alternate infinite ease-in-out;
 
   &::after {
     content: '';
-    // position: absolute;
     border: solid #fff;
     border-width: 0 1.4px 1.4px 0;
     display: inline-block;
