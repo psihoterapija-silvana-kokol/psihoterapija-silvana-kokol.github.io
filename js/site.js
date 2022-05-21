@@ -27,11 +27,18 @@ const Main = (function () {
     scroll2(scrollOffset, 1600, 'easeInOutCubic');
   }
 
+  let arrowVisible = true;
+
   function toggleArrow() {
-    if (window.scrollY > 0) arrowDown.classList.add('transparent');
-    else arrowDown.classList.remove('transparent');
+    // if (window.scrollY > 0) arrowDown.classList.add('transparent');
+    // else arrowDown.classList.remove('transparent');
+
+    if (arrowVisible && window.scrollY > 0) {
+      arrowDown.classList.add('transparent');
+      arrowVisible = false;
+    } else if (!arrowVisible && window.scrollY <= 0) {
+      arrowDown.classList.remove('transparent');
+      arrowVisible = true;
+    }
   }
 })();
-
-// TODO: fonti so lahko skriti, ko se nalozijo, se pocasi pojavijo (animacija)
-// ali: preload fonts
