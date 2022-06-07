@@ -30,13 +30,12 @@ const Main = (function () {
   let arrowVisible = true;
 
   function toggleArrow() {
-    // if (window.scrollY > 0) arrowDown.classList.add('transparent');
-    // else arrowDown.classList.remove('transparent');
-
     if (arrowVisible && window.scrollY > 0) {
+      // hide arrow
       arrowDown.classList.add('transparent');
       arrowVisible = false;
     } else if (!arrowVisible && window.scrollY <= 0) {
+      // show arrow
       arrowDown.classList.remove('transparent');
       arrowVisible = true;
     }
