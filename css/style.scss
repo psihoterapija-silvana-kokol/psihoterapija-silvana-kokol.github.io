@@ -123,10 +123,6 @@ section.o-psihoterapiji {
   }
 }
 
-.transparent {
-  opacity: 0;
-}
-
 .arrow-down {
   cursor: pointer;
   position: absolute;
@@ -148,6 +144,11 @@ section.o-psihoterapiji {
 
     // down
     transform: rotate(45deg);
+  }
+
+  &.transparent {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 

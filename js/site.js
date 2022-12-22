@@ -2,7 +2,7 @@ const Main = (function () {
   // cache DOM
   const yearSpan = document.querySelector('#year');
   const arrowDown = document.querySelector('.arrow-down');
-  let oMeniDiv = document.querySelector('.o-meni');
+  const oMeniDiv = document.querySelector('.o-meni');
 
   // connect listeners
   arrowDown.addEventListener('click', scrollDown);
