@@ -29,6 +29,7 @@
     <!-- prettier-ignore -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/galerija.css" />
 
     <title>Psihoterapija Silvana Kokol</title>
   </head>
@@ -76,7 +77,12 @@
 
           <div class="col col-5 ms-5 d-none d-md-block mt-md-5 mb-md-4 pt-md-3">
             <div class="portrait">
-              <img src="./img/portret.jpg" alt="Silvana Kokol" />
+              <!-- <img src="./img/portret.jpg" alt="Silvana Kokol" /> -->
+              <div id="gallery-1">
+                <img src="/img/portret.jpg" />
+                <img src="/img/diploma_eccp_medium.jpg" data-contain />
+                <img src="/img/diploma_sfu_medium.jpg" data-contain />
+              </div>
             </div>
           </div>
         </div>
@@ -84,7 +90,12 @@
 
       <div class="container-fluid d-md-none px-0 mb-4">
         <div class="portrait">
-          <img src="./img/portret.jpg" alt="Silvana Kokol" />
+          <!-- <img src="./img/portret.jpg" alt="Silvana Kokol" /> -->
+          <div id="gallery-2">
+            <img src="/img/portret.jpg" />
+            <img src="/img/diploma_eccp_medium.jpg" data-contain />
+            <img src="/img/diploma_sfu_medium.jpg" data-contain />
+          </div>
         </div>
       </div>
     </section>
@@ -168,6 +179,7 @@
 
     <script src="js/rellax.min.js"></script>
     <script src="js/animations.min.js"></script>
+    <script src="js/gallery.js"></script>
     <script src="js/site.js"></script>
   </body>
 </html>

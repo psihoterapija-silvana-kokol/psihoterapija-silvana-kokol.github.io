@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  * {
+    user-select: none;
+    cursor: default;
+  }
+
+  & > img {
+    display: none;
+  }
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #222;
+
+  // border: 2px solid red;
+
+  display: flex;
+  flex-direction: column;
+
+  #display {
+    flex-grow: 1;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      &[data-contain] {
+        object-fit: contain;
+      }
+    }
+  }
+
+  #thumbnails {
+    height: 50px; // 70px PC; 50px iPhone
+    width: 100%;
+    background: #000000cc;
+    z-index: 100;
+    padding: 5px; // 7px PC; 5px iPhone
+
+    // position: absolute;
+    // bottom: 0;
+
+    // border: 2px solid blue;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    img {
+      height: 100%;
+      filter: brightness(0.5);
+      cursor: pointer;
+      
+      &:hover {
+        filter: brightness(0.7);
+      }
+      
+      &[data-selected] {
+        filter: brightness(1);
+      }
+    }
+  }
+}
