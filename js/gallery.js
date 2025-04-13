@@ -21,6 +21,7 @@ const Gallery = (function () {
       $(selector + ' #display').innerHTML = $('#thumbnails img').outerHTML;
       $(selector + ' #thumbnails img').dataset.selected = '';
 
+      // click event
       $(selector + ' #thumbnails').onclick = (e) => {
         if (e.target.matches('img')) {
           $(selector + ' #display').innerHTML = e.target.outerHTML;

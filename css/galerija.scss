@@ -45,7 +45,7 @@ body {
   }
 
   #thumbnails {
-    height: 50px; // 70px PC; 50px iPhone
+    height: 60px; // 70px PC; 50px iPhone
     width: 100%;
     background: #000000cc;
     z-index: 100;
@@ -65,14 +65,19 @@ body {
       height: 100%;
       filter: brightness(0.5);
       cursor: pointer;
-      
+
       &:hover {
         filter: brightness(0.7);
       }
-      
+
       &[data-selected] {
         filter: brightness(1);
+        pointer-events: none;
       }
+    }
+
+    @media screen and (max-width: 375px) {
+      height: 50px;
     }
   }
 }
